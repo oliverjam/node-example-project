@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 40rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: hsl(220, 10%, 25%);
+  background-color: hsl(220, 10%, 96%);
+}
+
+h2 {
+  margin-top: 3rem;
+}
+
+label,
+input,
+button {
+  display: block;
+  font: inherit;
+  color: inherit;
+}
+
+label {
+  margin-top: 1rem;
+}
+
+.row {
+  max-width: 20rem;
+  margin-top: 0.5rem;
+  display: flex;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.row:focus-within {
+  box-shadow: 0 0 0 3px hsl(220, 60%, 70%);
+}
+
+input {
+  width: 100%;
+  border: 1px solid hsl(220, 10%, 85%);
+  background-color: hsl(220, 10%, 98%);
+  padding: 0.5rem;
+}
+
+input:focus {
+  background-color: #fff;
+}
+
+button {
+  border: 0;
+  padding: 0.5rem 0.75rem;
+  background-color: hsl(220, 40%, 85%);
+}
+
+.results {
+  border: 1px solid hsl(220, 10%, 85%);
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.results li {
+  border: 1px solid hsl(220, 10%, 85%);
+  padding: 1rem;
+  background-color: #fff;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.results h2 {
+  margin: 0;
+}
+
+.results a {
+  color: inherit;
+}
